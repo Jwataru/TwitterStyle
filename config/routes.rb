@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
   resources :tweets do
     resource :favorites, only: [:create, :destroy]
-    resource :comments, only: [:create]
+    resources :comments, only: [:create, :destroy]
   end
 
-  resources :comments, only: [:destroy]
+  # resources :comments, only: [:destroy]
 
   resources :users do
     resource :relationships, only: [:create, :destroy]

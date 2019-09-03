@@ -23,5 +23,5 @@
   <hr>
   <p><span>email: </span><%=link_to comment.user.email, user_path(comment.user.id) %></p>
   <p><span>コメント内容: </span><%= comment.body %></p>
-  <p><%=link_to "削除", comment_path(comment), method: :delete%></p>
+  <p><%=link_to "削除", tweet_comment_path(comment.tweet, comment), method: :delete %></p>
 <% end %>
