@@ -51,3 +51,4 @@ p SecureRandom.random_number(10**5)
 # p Date.new(2017,9,5)
 p SecureRandom.alphanumeric
 a
+aaaaa
