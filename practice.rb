@@ -52,3 +52,4 @@ p SecureRandom.random_number(10**5)
 p SecureRandom.alphanumeric
 a
 aaaaa
+mmmm
